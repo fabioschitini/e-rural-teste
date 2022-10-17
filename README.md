@@ -14,6 +14,8 @@ e depois use npm start
 * 5-OBS-O arquivo Salas.test.js tem um pequeno bug de as vezes da erro nos teste de primeira.Se rodar novamente o erro desaparece.Queria ter consertado tal bug, mas 
 infelizemente nao deu tempo
 * 6-O API que eu uso,YOutube API, possui um limite na quantidade de chamadas que pode fazer por dia, entao caso um erro de chama 403 ocorra, a razao é que o usuario ultrapassou o limite.
+* 7-Tenho quase certeza que todas as API estao liberadas para serem usadas em qualquer maquina, mas caso nao consiga permissao
+me mande um email: fabioschitini1@hotmail.com
 
 
 # Built with
