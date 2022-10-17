@@ -5,7 +5,7 @@
 Projeto em que eu criei uma pagina em qeu o usuario pode criar salas, entrar nelas, e dentro dessas salas pode pesquisar por videos do youtube e compartilhar 
 com seus amigos o link da sala, para que assim eles possam assistir juntos.
 
-#Instrucoes
+# Instrucoes
 * 1-È necessario ter instalado no computador Node e npm.
 * 2-Apos clonar,baixar meu repositorio, utilize de um terminal, recomendo o do vsCode, entre na pastar server primeiro, use npm i, espere as instalacoes dos modulos,
 e depois use npm start
