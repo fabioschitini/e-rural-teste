@@ -10,7 +10,7 @@ const instance = axio.create({
   }); 
 const nomeTeste='testando 123'
 
-test('Render add image ',()=>{
+test('Renderizar o simbolo de adicionar sala ',()=>{
     render(<MemoryRouter><Home /></MemoryRouter>)
    expect(screen.getByTestId('add')).toBeInTheDocument()
 }) 
@@ -24,7 +24,7 @@ test('Render add image ',()=>{
     expect(screen.getByText('Sair')).toBeInTheDocument()
 })
 
-test('When you click on the sair button, saia',async ()=>{
+test('When you click on the sair button, close alert',async ()=>{
     render(<MemoryRouter><Home /></MemoryRouter>)
     const addImage=screen.getByTestId('add')
     fireEvent.click(addImage);
@@ -33,7 +33,7 @@ test('When you click on the sair button, saia',async ()=>{
     await waitFor(() =>{expect(screen.queryByText('De um nome a sua sala')).not.toBeInTheDocument()})
 })
 
-test('When you click on the submit button,redirect to the room page',async ()=>{
+test('When you click on the submit button,submit info to database,then redirect to the room page',async ()=>{
     render(<MemoryRouter><Home /></MemoryRouter>)
     const addImage=screen.getByTestId('add')
     fireEvent.click(addImage);
@@ -45,7 +45,7 @@ test('When you click on the submit button,redirect to the room page',async ()=>{
     await waitFor(() =>{expect(screen.getByTestId('location-display')).toHaveTextContent('/salas/')})
 }) 
 
-test('When you click on the delete button,redirect to the home page',async ()=>{
+test('When you click on the delete button,delete room,then redirect to the home page',async ()=>{
     const salasLista= await instance.get('/salas')
     const testSalas=salasLista.data.filter(game=>game.name==`${nomeTeste}`)[0]
     if(testSalas){

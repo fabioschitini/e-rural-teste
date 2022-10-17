@@ -1,7 +1,7 @@
 import { useState,useEffect } from 'react';
 import { LocationDisplay } from '../App';
-import NomeSala from './subComponents/NomeSala';
-import SalasList from './subComponents/SalasList';
+import NodeDaSala from './subComponents/NomeDaSala';
+import ListaDeSalas from './subComponents/ListaDeSalas';
 import instance from './apis/express'
 
  
@@ -11,6 +11,7 @@ const Home=()=>{
     const [testeSalas, setTesteSalas] = useState('');
 
     useEffect(()=>{
+        //fetch nas salas
         const fetchRooms=async ()=>{
            const reponse=await instance.get('/salas')
            setRooms(reponse.data)
@@ -20,8 +21,8 @@ const Home=()=>{
 
     return(
 <div> 
-<NomeSala setTesteSalas={setTesteSalas} show={show} setShow={setShow}/>
-<SalasList setShow={setShow} room={room} setTesteSalas={setTesteSalas} />
+<NodeDaSala setTesteSalas={setTesteSalas} show={show} setShow={setShow}/>
+<ListaDeSalas setShow={setShow} room={room} setTesteSalas={setTesteSalas} />
     <div  style={{display:'none'}} data-testid="test">{testeSalas}</div>
 <LocationDisplay/>
 </div>

@@ -3,6 +3,7 @@ import { useNavigate} from "react-router-dom";
 import {Button,Alert} from 'react-bootstrap';
 import instance from '../apis/express'
 
+//Reponsavel por dar nome sala
 const NomeSala=(props)=>{
     const [sala, setSala] = useState('');
     const navigate=useNavigate()

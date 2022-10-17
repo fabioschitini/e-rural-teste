@@ -6,7 +6,7 @@ import Nav from './components/Nav';
 export const LocationDisplay = () => {
   const location = useLocation()
   return <div style={{display:'none'}} data-testid="location-display">{location.pathname}</div>}
-
+  
 export const App=()=> {
   return (
     <div className="App">
