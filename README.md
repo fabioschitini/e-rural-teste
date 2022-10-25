@@ -6,7 +6,7 @@ com seus amigos o link da sala, para que assim eles possam assistir juntos.
 # Instrucoes
 * 1-Tanto o backend e frontend estao na nuvem, so clicar no link e aproveitar!
 https://fabioschitini.github.io/e-rural-teste/
-(caso queria roda manualmente na sua maquina, so seguir os passos abaixos.
+(caso queria rodar manualmente na sua maquina, so seguir os passos abaixos.
 
 * 2-È necessario ter instalado no computador Node e npm.
 * 3-Apos clonar,baixar meu repositorio, utilize de um terminal, recomendo o do vsCode, entre na pastar clinet, use npm i, espere as instalacoes dos modulos,
