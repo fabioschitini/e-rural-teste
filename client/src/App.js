@@ -14,8 +14,8 @@ export const App=()=> {
 <Router>
         <Nav/>
         <Routes>
-          <Route exact path='/' element={<Home />} /> 
-          <Route exact path='/salas/:id' element={<Salas/>} /> 
+          <Route exact path='/e-rural-teste/' element={<Home />} /> 
+          <Route exact path='/e-rural-teste/salas/:id' element={<Salas/>} /> 
         </Routes>
         </Router>
     </div>
