@@ -3,19 +3,12 @@ import { render, screen,fireEvent,waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import {MemoryRouter,BrowserRouter as Router} from 'react-router-dom'
 import Home from './Home'
-import axio from 'axios'
-
-const instance = axio.create({ 
-    baseURL: 'http://localhost:3001/',
-  }); 
+import instance from './apis/express'
 const nomeTeste='testando 123'
 
-test('Renderizar o simbolo de adicionar sala ',()=>{
-    render(<MemoryRouter><Home /></MemoryRouter>)
-   expect(screen.getByTestId('add')).toBeInTheDocument()
-}) 
+
  
- test('When you click on the add image, create alert input',()=>{
+ test('When you click on the add text, create alert input',()=>{
     render(<MemoryRouter><Home /></MemoryRouter>)
     const addImage=screen.getByTestId('add')
     fireEvent.click(addImage);

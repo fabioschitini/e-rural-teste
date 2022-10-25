@@ -1,9 +1,7 @@
 import { Navbar,Nav,Container} from 'react-bootstrap';
 import { LocationDisplay } from '../App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 const Navs=()=>{
-
     return(
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="light">

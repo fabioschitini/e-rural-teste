@@ -9,7 +9,6 @@ import {useParams} from 'react-router-dom'
 
 const Salas=()=>{
     const [videos,setVideos]=useState([])
-    //const [selectedVideo,setSelectedVideo]=useState(null)
     const [nomeSala,setNomeSala]=useState(null)
     const [selectedVideoTitle,setSelectedVideoTitle]=useState(null)
     const [selectedVideoLink,setSelectedVideoLink]=useState(null)
