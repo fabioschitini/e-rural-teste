@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/e-rural/static/css/main.3f213522.css",
-    "main.js": "/e-rural/static/js/main.24b8c1c3.js",
-    "static/media/add.svg": "/e-rural/static/media/add.a1ad828c5634b2923f88548329070734.svg",
-    "static/media/share.svg": "/e-rural/static/media/share.8f4fb5f468d99d5bda6b598c4c82caa8.svg",
-    "index.html": "/e-rural/index.html",
-    "main.3f213522.css.map": "/e-rural/static/css/main.3f213522.css.map",
-    "main.24b8c1c3.js.map": "/e-rural/static/js/main.24b8c1c3.js.map"
+    "main.css": "/e-rural-teste/static/css/main.3f213522.css",
+    "main.js": "/e-rural-teste/static/js/main.b36a3eac.js",
+    "static/media/add.svg": "/e-rural-teste/static/media/add.a1ad828c5634b2923f88548329070734.svg",
+    "static/media/share.svg": "/e-rural-teste/static/media/share.af39e0007e4b120f12c8324aa641954f.svg",
+    "index.html": "/e-rural-teste/index.html",
+    "main.3f213522.css.map": "/e-rural-teste/static/css/main.3f213522.css.map",
+    "main.b36a3eac.js.map": "/e-rural-teste/static/js/main.b36a3eac.js.map"
   },
   "entrypoints": [
     "static/css/main.3f213522.css",
-    "static/js/main.24b8c1c3.js"
+    "static/js/main.b36a3eac.js"
   ]
 }
