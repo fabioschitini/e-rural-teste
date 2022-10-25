@@ -1,4 +1,4 @@
-import {HashRouter as Router,Routes ,Route,useLocation} from 'react-router-dom'
+import {BrowserRouter as Router,Routes ,Route,useLocation} from 'react-router-dom'
 import Home from './components/Home';
 import Salas from './components/Salas';
 import Nav from './components/Nav';
@@ -14,8 +14,8 @@ export const App=()=> {
 <Router>
         <Nav/>
         <Routes>
-          <Route exact path='/e-rural-teste/' element={<Home />} /> 
-          <Route exact path='/e-rural-teste/salas/:id' element={<Salas/>} /> 
+          <Route exact path='/' element={<Home />} /> 
+          <Route exact path='/salas/:id' element={<Salas/>} /> 
         </Routes>
         </Router>
     </div>

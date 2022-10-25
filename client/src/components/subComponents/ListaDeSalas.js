@@ -22,7 +22,7 @@ const SalasList=(props)=>{
         {props.room&& props.room.map(sala=>{
       return(
             <li style={{maxWidth:'20rem'}}>
-    <a href={`/e-rural-teste/salas/${sala._id}`} class="card">
+    <a href='' class="card">
       {sala.image?
         <img src={sala.image} class="card__image" alt="" />
       :  <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
@@ -31,7 +31,7 @@ const SalasList=(props)=>{
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
           <div style={{display:'flex',justifyContent:'space-between'}} class="card__header-text">
-          <Link to={`/e-rural-teste/salas/${sala._id}`}>    <h3 class="card__title">{sala.name}</h3> </Link> 
+          <Link to={`/salas/${sala._id}`}>   <h3 class="card__title">{sala.name}</h3> </Link > 
             <h3 onClick={DeleteSala} id={sala._id} data-testid={sala.name}  class="card__title delete">Delete</h3>            
           </div>
         </div>
