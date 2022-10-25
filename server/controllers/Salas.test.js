@@ -34,6 +34,28 @@ it('GET /games return array with object with all salas',async()=>{
  )
 })
 
+it('UPDATE /game, uptdate especified game',async()=>{
+    const sala=await Salas.find({name:'sala teste'})
+    console.log(sala,'salassssssssssssssssssss')
+    const salaId=sala[0]._id
+    const response=await request(app)
+    .put(`/salas/${salaId}`)
+    .send({
+        name:'sala teste',
+        description:"Teste",
+        title:"teste",
+        link:"teste.com"
+    })
+    .expect("Content-Type",/json/)
+    .expect(200)
+ expect(response.body).toEqual( expect.arrayContaining([
+    expect.objectContaining({
+        name:'sala teste',
+        link:'teste.com'
+    })
+]))
+}) 
+
 it('DELETE /game, delete especified game',async()=>{
     const sala=await Salas.find({name:'sala teste'})
     salaId=sala[0]._id
