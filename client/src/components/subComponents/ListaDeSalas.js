@@ -31,7 +31,7 @@ const SalasList=(props)=>{
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
           <div style={{display:'flex',justifyContent:'space-between'}} class="card__header-text">
-          <Link to={`/e-rural-teste/salas/${sala._id}`}>   <h3 class="card__title">{sala.name}</h3> </Link > 
+          <Link to={`/salas/${sala._id}`}>   <h3 class="card__title">{sala.name}</h3> </Link > 
             <h3 stlye={{cursor:'pointer'}} onClick={DeleteSala} id={sala._id} data-testid={sala.name}  class="card__title delete">Delete</h3>            
           </div>
         </div>

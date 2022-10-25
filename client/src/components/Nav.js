@@ -12,7 +12,7 @@ const Navs=()=>{
                     <Navbar.Toggle style={{backgroundColor:'white'}} aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse  id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                             <Link to={"/e-rural-teste"} style={{color:'white'}}> Home Page</Link> 
+                             <Link to={"/"} style={{color:'white'}}> Home Page</Link> 
                             </Nav>    
                     </Navbar.Collapse>
                  </Container>
