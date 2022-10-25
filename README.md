@@ -1,7 +1,5 @@
 # e-rural-teste
 
-# Blog-API
-
 Projeto em que eu criei uma pagina em qeu o usuario pode criar salas, entrar nelas, e dentro dessas salas pode pesquisar por videos do youtube e compartilhar 
 com seus amigos o link da sala, para que assim eles possam assistir juntos.
 
