@@ -8,12 +8,13 @@ export const LocationDisplay = () => {
   return <div style={{display:'none'}} data-testid="location-display">{location.pathname}</div>}
   
 export const App=()=> {
+
   return (
     <div className="App">
 <Router>
         <Nav/>
         <Routes>
-          <Route exact path='/e-rural-teste/' element={<Home/>} /> 
+          <Route exact path='/e-rural-teste/' element={<Home />} /> 
           <Route exact path='/e-rural-teste/salas/:id' element={<Salas/>} /> 
         </Routes>
         </Router>

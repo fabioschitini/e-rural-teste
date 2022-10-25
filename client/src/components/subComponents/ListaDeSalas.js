@@ -1,4 +1,3 @@
-import ReactLogo from '../logos/add.svg';
 import {Link} from 'react-router-dom'
 import instance from '../apis/express'
 
@@ -19,33 +18,31 @@ const SalasList=(props)=>{
         }
     }
     return(
-<div className="album py-5 bg-light">
-  <div className="container">
-    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div className="col">
-        <img data-testid="add" onClick={() => props.setShow(true)} style={{height:'6rem',cursor:'pointer'}} 
-                    src={ReactLogo} alt="React Logo" />
-      </div>
+      <ul class="cards">
         {props.room&& props.room.map(sala=>{
       return(
-        <div key={sala._id} className="col">
-          <div className="card shadow-sm">
-            <div style={{padding:"20px"}} className="card-body">
-                <Link to={`/e-rural-teste/salas/${sala._id}`}>  <p  className="card-text">Sala {sala.name}</p> </Link> 
-                <div className="d-flex justify-content-between align-items-center">
-                  <div className="btn-group">
-                <Link />
-                    <button id={sala._id} data-testid={sala.name} onClick={DeleteSala} type="button" className="btn btn-sm btn-outline-secondary">Deletar</button>
-                  </div>
-              </div> 
-            </div>
+            <li style={{maxWidth:'20rem'}}>
+    <a href={`/e-rural-teste/salas/${sala._id}`} class="card">
+      {sala.image?
+        <img src={sala.image} class="card__image" alt="" />
+      :  <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+    }
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+          <div style={{display:'flex',justifyContent:'space-between'}} class="card__header-text">
+          <Link to={`/e-rural-teste/salas/${sala._id}`}>    <h3 class="card__title">{sala.name}</h3> </Link> 
+            <h3 onClick={DeleteSala} id={sala._id} data-testid={sala.name}  class="card__title delete">Delete</h3>            
           </div>
         </div>
-                )
-                })}
-    </div>
-  </div>
-</div>
+        {sala.description?
+        <p  className="card__description" alt="" > {sala.description}</p>
+      :          <p className="card__description">Entre e compartilhe seus videos com seus amigos!</p>
+    }
+      </div>
+    </a>      
+            </li>)})}
+                </ul>
            )
 }
 

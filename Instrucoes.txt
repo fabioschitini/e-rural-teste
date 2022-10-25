@@ -11,3 +11,22 @@ Se rodar novamente o erro desaparece.Queria ter consertado tal bug, mas infelize
 entao caso um erro de chama 403 ocorra, a razao é que o usuario ultrapassou o limite.
 7-Tenho quase certeza que todas as API estao liberadas para serem usadas em qualquer maquina, mas caso nao consiga permissao
 me mande um email: fabioschitini1@hotmail.com
+
+
+        <div key={sala._id} className="col">
+          <div className="card shadow-sm">
+            <div style={{padding:"20px"}} className="card-body">
+                <Link to={`/e-rural-teste/salas/${sala._id}`}>  <p  className="card-text">Sala {sala.name}</p> </Link> 
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="btn-group">
+                <Link />
+                    <button id={sala._id} data-testid={sala.name} onClick={DeleteSala} type="button" className="btn btn-sm btn-outline-secondary">Deletar</button>
+                  </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+
+               <img data-testid="add" onClick={() => props.setShow(true)} style={{cursor:'pointer',maxWidth:'16rem'}} 
+                    src={ReactLogo} alt="React Logo" />

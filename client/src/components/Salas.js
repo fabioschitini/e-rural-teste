@@ -14,14 +14,17 @@ const Salas=()=>{
     const [selectedVideoTitle,setSelectedVideoTitle]=useState(null)
     const [selectedVideoLink,setSelectedVideoLink]=useState(null)
     const [selectedVideoDescription,setSelectedVideoDescription]=useState(null)
+    const [selectedVideoImage,setSelectedVideoImage]=useState(null)
+
     const {id}=useParams()
 
     const clickVideo=async (selectedVideo)=>{
        await instance.put(`salas/${id}`,{link:selectedVideo.id.videoId,title:selectedVideo.snippet.title,
-        description:selectedVideo.snippet.description,name:nomeSala})
+        description:selectedVideo.snippet.description,name:nomeSala,image:selectedVideo.snippet.thumbnails.medium.url})
         setSelectedVideoLink(selectedVideo.id.videoId)
         setSelectedVideoDescription(selectedVideo.snippet.description)
         setSelectedVideoTitle(selectedVideo.snippet.title)
+        setSelectedVideoImage(selectedVideo.snippet.thumbnails.medium.url)
         }
 
     useEffect( ()=>{

@@ -44,7 +44,8 @@ it('UPDATE /game, uptdate especified game',async()=>{
         name:'sala teste',
         description:"Teste",
         title:"teste",
-        link:"teste.com"
+        link:"teste.com",
+        image:'image.com'
     })
     .expect("Content-Type",/json/)
     .expect(200)

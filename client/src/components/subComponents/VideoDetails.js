@@ -1,4 +1,4 @@
-import Accordion from 'react-bootstrap/Accordion';
+
 
 const VideoDetails=(props)=>{
     return(    
@@ -19,12 +19,8 @@ const VideoDetails=(props)=>{
        <iframe role='iframe' src={`https://www.youtube.com/embed/${props.Link}`} allowFullScreen title="Video player" />
      <div className="ui segment">
        <p className=" header">{props.selectedVideoTitle}</p>
-       <Accordion >
-<Accordion.Item eventKey="0">
-<Accordion.Header>Description</Accordion.Header>
-<Accordion.Body style={{fontSize:'0.9rem'}}>{props.Description}</Accordion.Body>
-</Accordion.Item>
-</Accordion>
+      <h3>{props.Title}</h3>
+
      </div>
    </div>}
    </div>   

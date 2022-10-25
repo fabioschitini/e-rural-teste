@@ -37,7 +37,8 @@ const CompartilharLink=(props)=>{
           <TwitterIcon size={40} round={true} />
         </TwitterShareButton>
         </div>
-      </Alert>
+
+        </Alert>
 
     )
 }

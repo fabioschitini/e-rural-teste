@@ -70,7 +70,13 @@ iframe{
     background-color: rgb(39,196,82);
 }
 
+.play-video-info{
+  display: flex;
+  align-items: center;
+}
 
+
+  
 @media only screen and (max-width: 800px) {
     .video-container{
         display: flex;

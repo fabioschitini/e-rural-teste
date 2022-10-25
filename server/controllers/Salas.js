@@ -51,6 +51,7 @@ exports.salas_put_id=async(req,res,next)=>{
       title:req.body.title,
       description:req.body.description,
       link:req.body.link,
+      image:req.body.image,
       _id:req.params.id
     })
    const salasSelecionada=await Salas.findByIdAndUpdate(id,uptadedSala,{})
