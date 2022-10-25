@@ -1,6 +1,8 @@
 import { Navbar,Nav,Container} from 'react-bootstrap';
 import { LocationDisplay } from '../App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link} from 'react-router-dom'
+
 const Navs=()=>{
     return(
         <div>
@@ -10,7 +12,7 @@ const Navs=()=>{
                     <Navbar.Toggle style={{backgroundColor:'white'}} aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse  id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                             <Nav.Link href='/e-rural-teste' style={{color:'white'}}> Home Page</Nav.Link>
+                             <Link to={"/e-rural-teste"} style={{color:'white'}}> Home Page</Link> 
                             </Nav>    
                     </Navbar.Collapse>
                  </Container>
