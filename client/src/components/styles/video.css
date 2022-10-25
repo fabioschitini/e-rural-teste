@@ -23,7 +23,7 @@
     flex-direction: column
 }
 iframe{
-    min-height: 350px;
+    min-height: 450px;
 }
 .video-list{
     display: flex;
@@ -75,7 +75,9 @@ iframe{
   align-items: center;
 }
 
-
+.delete{
+    cursor: pointer;
+}
   
 @media only screen and (max-width: 800px) {
     .video-container{
