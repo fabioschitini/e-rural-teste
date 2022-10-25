@@ -18,11 +18,14 @@
     "react-share": "^4.4.0",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "http://fabioschitini.github.io/e-rural/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +49,8 @@
     "transformIgnorePatterns": [
       "node_modules/(?!bootstrap),(?!axios)"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

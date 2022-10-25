@@ -31,7 +31,7 @@ const SalasList=(props)=>{
         <div key={sala._id} className="col">
           <div className="card shadow-sm">
             <div style={{padding:"20px"}} className="card-body">
-                <Link to={`/salas/${sala._id}`}>  <p  className="card-text">Sala {sala.name}</p> </Link> 
+                <Link to={`/e-rural-teste/salas/${sala._id}`}>  <p  className="card-text">Sala {sala.name}</p> </Link> 
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="btn-group">
                 <Link />
