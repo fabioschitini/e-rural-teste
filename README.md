@@ -5,14 +5,10 @@ com seus amigos o link da sala, para que assim eles possam assistir juntos.
 
 # Instrucoes
 * 1-È necessario ter instalado no computador Node e npm.
-* 2-Apos clonar,baixar meu repositorio, utilize de um terminal, recomendo o do vsCode, entre na pastar server primeiro, use npm i, espere as instalacoes dos modulos,
+* 2-Apos clonar,baixar meu repositorio, utilize de um terminal, recomendo o do vsCode, entre na pastar clinet, use npm i, espere as instalacoes dos modulos,
 e depois use npm start
-* 3-Depois de ter iniciado o server, use outro terminal e entre na pasta cliente.Apos fazer isso use npm i, espere a instalacao, e depois use npm start para comecar.
-* 4-Eu imbui alguns teste no projeto(tanto no server quanto no cliente), entao se quiser roda-los,é so usar npm test,depois de ter instalado as dependecias é claro.
-* 5-OBS-O arquivo Salas.test.js tem um pequeno bug de as vezes da erro nos teste de primeira.Se rodar novamente o erro desaparece.Queria ter consertado tal bug, mas 
-infelizemente nao deu tempo
-* 6-O API que eu uso,YOutube API, possui um limite na quantidade de chamadas que pode fazer por dia, entao caso um erro de chama 403 ocorra, a razao é que o usuario ultrapassou o limite.
-* 7-Tenho quase certeza que todas as API estao liberadas para serem usadas em qualquer maquina, mas caso nao consiga permissao
+* 3-O API que eu uso,YOutube API, possui um limite na quantidade de chamadas que pode fazer por dia, entao caso um erro de chama 403 ocorra, a razao é que o usuario ultrapassou o limite.
+* 4-Tenho quase certeza que todas as API estao liberadas para serem usadas em qualquer maquina, mas caso nao consiga permissao
 me mande um email: fabioschitini1@hotmail.com
 
 
