@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/e-rural-teste/static/css/main.0b7c5723.css",
-    "main.js": "/e-rural-teste/static/js/main.529b6d1e.js",
+    "main.js": "/e-rural-teste/static/js/main.d6afba0a.js",
     "static/media/share.svg": "/e-rural-teste/static/media/share.af39e0007e4b120f12c8324aa641954f.svg",
     "index.html": "/e-rural-teste/index.html",
     "main.0b7c5723.css.map": "/e-rural-teste/static/css/main.0b7c5723.css.map",
-    "main.529b6d1e.js.map": "/e-rural-teste/static/js/main.529b6d1e.js.map"
+    "main.d6afba0a.js.map": "/e-rural-teste/static/js/main.d6afba0a.js.map"
   },
   "entrypoints": [
     "static/css/main.0b7c5723.css",
-    "static/js/main.529b6d1e.js"
+    "static/js/main.d6afba0a.js"
   ]
 }
