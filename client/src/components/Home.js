@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react';
 import { LocationDisplay } from '../App';
-import NodeDaSala from './subComponents/NomeDaSala';
+import NomeDaSala from './subComponents/NomeDaSala';
 import ListaDeSalas from './subComponents/ListaDeSalas';
 import instance from './apis/express'
 import '../components/styles/homePage.css';
@@ -25,7 +25,7 @@ const Home=()=>{
     <div>
         <h1 data-testid="add" onClick={() => setShow(true)} className='criar-sala'>Criar Sala</h1>
     </div>
-<NodeDaSala setTesteSalas={setTesteSalas} show={show} setShow={setShow}/>
+<NomeDaSala setTesteSalas={setTesteSalas} show={show} setShow={setShow}/>
 <ListaDeSalas setShow={setShow} room={room} setTesteSalas={setTesteSalas} />
     <div  style={{display:'none'}} data-testid="test">{testeSalas}</div>
 <LocationDisplay/>

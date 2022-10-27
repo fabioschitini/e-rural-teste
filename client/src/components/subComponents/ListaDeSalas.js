@@ -19,7 +19,7 @@ const SalasList=(props)=>{
     }
     return(
       <ul class="cards">
-        {props.room&& props.room.map(sala=>{
+        {props.room? props.room.map(sala=>{
       return(
             <li style={{maxWidth:'20rem'}}>
     <a  class="card">
@@ -41,7 +41,7 @@ const SalasList=(props)=>{
     }
       </div>
     </a>      
-            </li>)})}
+            </li>)}):<h1>Caso essa mensagem apareca por favor recarregue a pagina</h1>}
                 </ul>
            )
 }
