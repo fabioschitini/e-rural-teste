@@ -8,7 +8,7 @@ import '../components/styles/homePage.css';
  
 const Home=()=>{
     const [show, setShow] = useState(false);
-    const [room, setRooms] = useState('');
+    const [room, setRooms] = useState(undefined);
     const [testeSalas, setTesteSalas] = useState('');
 
     useEffect(()=>{

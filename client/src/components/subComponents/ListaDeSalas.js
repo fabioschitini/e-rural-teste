@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {Link} from 'react-router-dom'
 import instance from '../apis/express'
 
@@ -17,6 +18,19 @@ const SalasList=(props)=>{
             console.error(e.message)
         }
     }
+    const [loadingMessage,setLoadingMessage]=useState('')
+    const loading=()=>{
+      console.log(typeof props.room,'tipo')
+      if( !props.room){
+        console.log('deu bo')
+        setLoadingMessage('Caso essa mensagem apareca por favor recarregue a pagina')
+      }
+      else{
+        console.log('funcionando')
+      }
+    }
+    console.log(props.room)
+    setTimeout(loading,5000)
     return(
       <ul class="cards">
         {props.room? props.room.map(sala=>{
@@ -41,7 +55,7 @@ const SalasList=(props)=>{
     }
       </div>
     </a>      
-            </li>)}):<h1>Caso essa mensagem apareca por favor recarregue a pagina</h1>}
+            </li>)}):<h1>{loadingMessage}</h1>}
                 </ul>
            )
 }
