@@ -13,7 +13,7 @@ const NomeSala=(props)=>{
             const result=await instance.post('/salas',{name:sala})
             console.log(result,'result here mate')
             props.setTesteSalas(JSON.stringify(result.data))
-            navigate(`/e-rural-teste/salas/${result.data._id}`)
+            window.location.reload();
         }
         catch(e){
             console.error(e.message)
