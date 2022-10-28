@@ -6,7 +6,6 @@ import instance from '../apis/express'
 //Reponsavel por dar nome sala
 const NomeSala=(props)=>{
     const [sala, setSala] = useState('');
-    const navigate=useNavigate()
 
     const Submit=async ()=>{
         try{
